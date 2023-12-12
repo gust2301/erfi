@@ -499,7 +499,7 @@ background-color: #212121;
 /* banner */
 
 .main-top {
-    background: url(../images/b2.jpg) no-repeat bottom;
+    background: url(../images/homeImg2.jpg) no-repeat bottom;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -716,7 +716,7 @@ background-color: #212121;
 }
 
 .color-img-five {
-    background: url(../images/s6.jpg)no-repeat center;
+    background: url(../images/s6b.JPG)no-repeat center;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -847,13 +847,18 @@ background-color: #212121;
 }
 
 .busness-tip-one {
-    background: url(../images/bb1.jpg)no-repeat 0px 0px;
+    background: url(../images/erfi6.jpg)no-repeat 0px 0px;
 }
 
 .busness-tip-two {
-    background: url(../images/bb2.jpg)no-repeat 0px 0px;
+    background: url(../images/erfi3.jpg)no-repeat 0px 0px;
 }
-
+.busness-tip-three {
+    background: url(../images/erfi2.jpg)no-repeat 0px 0px;
+}
+.busness-tip-four {
+    background: url(../images/erfi4.jpg)no-repeat 0px 0px;
+}
 .busness-tip-two,
 .busness-tip-one {
     background-size: cover;
