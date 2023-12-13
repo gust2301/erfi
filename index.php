@@ -5,7 +5,7 @@
    License URL: http://creativecommons.org/licenses/by/3.0/
    -->
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="fr">
    <head>
       <title>ONG ERFI, Empowered Rural Families International</title>
       <!--meta tags -->
@@ -64,7 +64,7 @@
                         <ul>
                             <li><a href="#gallery" class="drop-text">Galerie</a></li>
                             <li><a href="#team" class="drop-text">Bénévoles</a></li>
-                            <li><a href="#blog" class="drop-text">Évènement</a></li>
+                            <li><a href="#blog" class="drop-text">Évènements</a></li>
                         </ul>
                      </li>
                      <li><a href="#contact">Contactez-nous</a></li>
@@ -78,13 +78,15 @@
          <div class="main-banner">
             <div class="container">
                <div class="style-banner ">
-                  <h4 class="mb-1">Better Care and Better World</h4>
-                  <h5>You have a good life,some other don't
+                  <h4 class="mb-1">Bienvenue chez ERFI </h4>
+                  <h5>Notre Mission : Éduquer. Soigner. Transformer.
                   </h5>
                </div>
+                <!--
                <div class="two-demo-button mt-lg-4 mt-3">
                   <p> Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum </p>
                </div>
+               -->
                <div class="view-buttn mt-md-4 mt-sm-4 mt-3">
                   <a href="#about" class="btn scroll">À propos</a>
                </div>
@@ -137,12 +139,18 @@
                      <h5>Notre Mission</h5>
                   </div>
                   <div class="about-para-txt">
-                     <p>sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore et consectetur adipiscing sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore et consectetur adipiscing</p>
-                     <p class="mt-2">sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, eiusmod tempor incididunt ut labore et consectetur adipiscing sed do eiusmod</p>
+                     <p>Chez ERFI « Empowered Rural Families International», nous croyons en un avenir où chaque enfant a accès à une éducation de qualité et où chaque mère peut accueillir son bébé dans des conditions optimales. En tant qu'association à but non lucratif régie par les articles 60 et suivants du Code Civil Suisse, nous sommes déterminés à faire une différence concrète dans la vie des communautés rurales.
+                     </p>
+                     <p class="mt-2">Nous luttons contre la déperdition scolaire en favorisant l'accès aux études secondaires pour les enfants des villages.
+                         De plus, nous nous engageons à offrir des soins de santé de qualité, en mettant particulièrement l'accent sur le bien-être des futures mamans vivant dans ces milieux.</p>
+                      <p class="mt-2"> Rejoignez-nous dans notre mission d'autonomisation des familles rurales à travers l'éducation et les soins de santé.</p>
+
                   </div>
+                   <!--
                   <div class="view-price mt-lg-5 mt-md-4 mt-3">
                      <a href="#contact" class=" scroll">Lire la suite</a>
                   </div>
+                  -->
                </div>
                <div class="col-lg-5 col-md-6 about-imgs-txt">
                </div>
@@ -207,7 +215,7 @@
          <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
             <h3 class="title text-center mb-md-4 mb-sm-3 mb-3 mb-2">Nos Services</h3>
             <div class="title-wls-text text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum </p>
+               <p>Engagés pour le Bien-être et l'Éducation : Découvrez Nos Services</p>
             </div>
             <div class="row">
                <div class="col-lg-5 service-two-grids">
@@ -263,7 +271,7 @@
          <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
             <h3 class="title text-center mb-md-4 mb-sm-3 mb-3 mb-2 clr">Nos Bénévoles</h3>
             <div class="title-wls-text text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3 sub-colors">
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum </p>
+               <p>À la Rencontre de Ceux Qui Font la Différence : Nos Bénévoles en Action</p>
             </div>
             <div class="row ">
                <div class="col-lg-3 col-md-6 col-sm-6 team-grid-colum text-center">
@@ -367,7 +375,7 @@
          <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
             <h3 class="title text-center mb-md-4 mb-sm-3 mb-3 mb-2">Notre Galerie</h3>
             <div class="title-wls-text text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">
-               <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum
+               <p >Découvrez notre Monde en Images : La Galerie d'ERFI
                </p>
             </div>
             <div class="row gallery-info">
@@ -499,7 +507,7 @@
          <div class="container-fluid py-lg-5 py-md-4 py-sm-4 py-3">
             <h3 class="title text-center mb-md-4 mb-sm-3 mb-3 mb-2">Derniers Événements</h3>
             <div class="title-wls-text text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum </p>
+               <p>Restez Connectés : Nos Derniers Événements et Actions Communautaires </p>
             </div>
             <div class="row">
                <div class="col-lg-3 col-md-6 col-sm-6 busness-tip-one">
@@ -594,20 +602,20 @@
          <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
             <h3 class="title text-center mb-md-4 mb-sm-3 mb-3 mb-2">Contactez-nous</h3>
             <div class="title-wls-text text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum
+               <p>Besoin d'Informations Supplémentaires ? Contactez-nous !
                </p>
             </div>
             <div class="row">
                <div class="col-lg-6 col-md-6 contact-details">
                   <form action="#" method="post">
                      <div class=" form-group contact-forms">
-                        <input type="text" class="form-control" placeholder="Name" required="">
+                        <input type="text" class="form-control" placeholder="Nom" required="">
                      </div>
                      <div class="form-group contact-forms">
                         <input type="email" class="form-control" placeholder="Email" required="">
                      </div>
                      <div class="form-group contact-forms">
-                        <input type="text" class="form-control" placeholder="Phone" required="">
+                        <input type="text" class="form-control" placeholder="Tél" required="">
                      </div>
                      <div class="form-group contact-forms">
                         <textarea class="form-control" placeholder="Message" rows="3" required=""></textarea>
@@ -620,7 +628,7 @@
                      <h2><a href="index.php">Funding</a></h2>
                   </div>-->
                   <div class="contact-address-grid mb-3">
-                     <h4> Address</h4>
+                     <h4> Adresse</h4>
                   </div>
                   <div class=" footer-contact-list mb-2">
                      <p>L'Ancienne-Route 20,<br>Genève , Switzerland.</p>
