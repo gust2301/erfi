@@ -1,9 +1,21 @@
-<!--A Design by W3layouts
-   Author: W3layout
-   Author URL: http://w3layouts.com
-   License: Creative Commons Attribution 3.0 Unported
-   License URL: http://creativecommons.org/licenses/by/3.0/
-   -->
+
+<?php
+session_start();
+// ... Votre code existant ...
+
+// Vérifier le paramètre de succès
+//$success = isset($_GET['success']) ? $_GET['success'] : null;
+
+// Afficher un message en fonction du paramètre de succès
+/*if ($success === '1') {
+    $message = "Votre message a été envoyé avec succès !";
+} elseif ($success === '0') {
+    $message = "Une erreur s'est produite lors de l'envoi du message.";
+} else {
+    $message = null;
+}*/
+
+?>
 <!DOCTYPE html>
 <html lang="fr">
    <head>
@@ -13,6 +25,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="keywords" content="Ong ERFI, Charity Fund, aid for disadvantaged children in Senegal,
          Children's education and social assistances" />
+      <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
       <script>
          addEventListener("load", function () {
          	setTimeout(hideURLbar, 0);
@@ -54,7 +67,7 @@
                   <ul class="menu mt-2">
                      <li class="active"><a href="index.php">Accueil</a></li>
                      <li class="mx-lg-3 mx-md-2 my-md-0 my-1"><a href="#about">À propos</a></li>
-                     <li><a href="#service">Services</a></li>
+                     <li><a href="#service">Engagez-vous</a></li>
                      <li class="mx-lg-3 mx-md-2 my-md-0 my-1">
                         <!-- First Tier Drop Down -->
                         <label for="drop-2" class="toggle toogle-2">Découvrir <span class="fa fa-angle-down" aria-hidden="true"></span>
@@ -106,9 +119,9 @@
                      <div class="mb-lg-3 mb-md-3 mb-2 abut-headder">
                         <h4>Don</h4>
                      </div>
-                     <p>sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet</p>
+                     <p> Découvrez comment vous pouvez contribuer à notre mission.</p>
                      <div class="view-price mt-3">
-                        <a href="#contact" class=" scroll">Lire la suite</a>
+                        <a href="#service" class=" scroll">Lire la suite</a>
                      </div>
                   </div>
                </div>
@@ -119,11 +132,11 @@
                <div class="col-lg-3 col-md-6 col-sm-6 banner-bottom-grid p-0">
                   <div class="w3layouts-abt-info">
                      <div class="mb-lg-3 mb-md-3 mb-2 abut-headder">
-                        <h4>Collecte de fonds</h4>
+                        <h4>Devenir Bénévole</h4>
                      </div>
-                     <p>sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet</p>
+                      <p>Rejoignez-nous dans notre mission d'aider les familles rurales.</p>
                      <div class="view-price mt-3">
-                        <a href="#contact" class=" scroll">Lire la suite</a>
+                        <a href="#contact" class=" scroll">Nous Contacter</a>
                      </div>
                   </div>
                </div>
@@ -167,7 +180,7 @@
                      <div class="count-icon">
                         <span class="fa fa-paw" aria-hidden="true"></span>
                      </div>
-                     <div class="counter-number">1200</div>
+                     <div class="counter-number">5400/an</div>
                      <div class="stat-info pt-lg-3 pt-md-3 pt-sm-3 pt-3">
                         <h4>Don</h4>
                      </div>
@@ -178,7 +191,7 @@
                      <div class="count-icon">
                         <span class="fa fa-smile-o" aria-hidden="true"></span>
                      </div>
-                     <div class="counter-number">2000</div>
+                     <div class="counter-number">20</div>
                      <div class="stat-info pt-lg-3 pt-md-3 pt-sm-3 pt-3">
                         <h4>Bénévoles</h4>
                      </div>
@@ -189,7 +202,7 @@
                      <div class="count-icon">
                         <span class="fa fa-leaf" aria-hidden="true"></span>
                      </div>
-                     <div class="counter-number">4000</div>
+                     <div class="counter-number">40</div>
                      <div class="stat-info pt-lg-3 pt-md-3 pt-sm-3 pt-3">
                         <h4>Enfants</h4>
                      </div>
@@ -200,7 +213,7 @@
                      <div class="count-icon">
                         <span class="fa fa-globe" aria-hidden="true"></span>
                      </div>
-                     <div class="counter-number">30+</div>
+                     <div class="counter-number">4</div>
                      <div class="stat-info pt-lg-3 pt-md-3 pt-sm-3 pt-3">
                         <h4>Pays</h4>
                      </div>
@@ -213,16 +226,20 @@
       <!-- service -->
       <section class="service py-lg-4 py-md-3 py-sm-3 py-3" id="service">
          <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
-            <h3 class="title text-center mb-md-4 mb-sm-3 mb-3 mb-2">Nos Services</h3>
+            <h3 class="title text-center mb-md-4 mb-sm-3 mb-3 mb-2">Soutenez Notre Cause</h3>
             <div class="title-wls-text text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">
-               <p>Engagés pour le Bien-être et l'Éducation : Découvrez Nos Services</p>
+               <p>Bienvenue dans notre espace dédié à l'engagement, où vous pouvez jouer un rôle actif dans l'amélioration des vies</p>
             </div>
             <div class="row">
                <div class="col-lg-5 service-two-grids">
                   <div class="color-img-five">
                      <div class="ser-sevice-grid text-center">
-                        <h4 class="pb-3">Faire un Don</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non Lorem ipsum dolor sit amet</p>
+                        <h4 class="pb-3">Votre Don Change des Vies</h4>
+                        <p>Chaque don que vous faites contribue directement à la réalisation de notre mission. Qu'il s'agisse de fournir des fournitures scolaires aux enfants, d'assurer un suivi médical pré et postnatal aux futures mamans, ou de mettre en place des programmes éducatifs innovants, votre soutien a un impact concret.</p>
+                        <p>Chaque geste compte. Merci de votre engagement envers notre cause.</p>
+                         <div class="view-price mt-3">
+                             <a href="#contact" class=" scroll">Soutenir Maintenant</a>
+                         </div>
                      </div>
                   </div>
                </div>
@@ -230,34 +247,34 @@
                   <div class="img-cols-grid row">
                      <div class="col-lg-6 col-md-6 col-sm-6">
                         <div class=" color-img-one" >
-                           <div class="ser-sevice-grid text-center">
-                              <h4 class="pb-3">Devenir Bénévole</h4>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna</p>
-                           </div>
+                            <div class="ser-sevice-grid text-center">
+                                <h4 class="pb-3">Faire un Don unique</h4>
+                                <p>Faites un don unique pour soutenir nos projets en cours.</p>
+                            </div>
                         </div>
                      </div>
                      <div class="col-lg-6 col-md-6 col-sm-6 ">
                         <div class=" color-img-two">
-                           <div class="ser-sevice-grid text-center">
-                              <h4 class="pb-3">Faire un Don</h4>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna</p>
-                           </div>
+                            <div class="ser-sevice-grid text-center">
+                                <h4 class="pb-3">Devenir Bénévole</h4>
+                                <p>Rejoignez notre équipe de bénévoles dévoués. Votre temps, vos compétences et votre énergie peuvent avoir un impact positif.</p>
+                            </div>
                         </div>
                      </div>
                      <div class="col-lg-6 col-md-6 col-sm-6 mt-md-4 mt-3">
                         <div class=" color-img-three">
-                           <div class="ser-sevice-grid text-center">
-                              <h4 class="pb-3">Parrainer un enfant</h4>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna</p>
-                           </div>
+                            <div class="ser-sevice-grid text-center">
+                                <h4 class="pb-3">Dons en Nature</h4>
+                                <p>Contribuez avec des fournitures éducatives, des vêtements, ou d'autres articles essentiels.</p>
+                            </div>
                         </div>
                      </div>
                      <div class="col-lg-6 col-md-6 col-sm-6 mt-md-4 mt-3">
                         <div class=" color-img-four">
-                           <div class="ser-sevice-grid text-center">
-                              <h4 class="pb-3">Human Rights</h4>
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna</p>
-                           </div>
+                            <div class="ser-sevice-grid text-center">
+                                <h4 class="pb-3">Parrainer un enfant</h4>
+                                <p>Devenez un parrain et apportez un soutien continu à un enfant dans le besoin.</p>
+                            </div>
                         </div>
                      </div>
                   </div>
@@ -381,22 +398,22 @@
             <div class="row gallery-info">
                <div class="col-lg-3 col-md-3 col-sm-6 gallery-img-grid p-0">
                   <div class="gallery-grids">
-                     <a href="#gal1"><img src="images/g1.jpg" alt="news image" class="img-fluid"></a>
+                     <a href="#gal1"><img src="images/g1b.jpg" alt="news image" class="img-fluid"></a>
                   </div>
                </div>
                <div class="col-lg-3 col-md-3 col-sm-6 gallery-img-grid p-0">
                   <div class="gallery-grids">
-                     <a href="#gal2"><img src="images/g2.jpg" alt="news image" class="img-fluid"></a>
+                     <a href="#gal2"><img src="images/g2b.jpg" alt="news image" class="img-fluid"></a>
                   </div>
                </div>
                <div class="col-lg-3 col-md-3 col-sm-6 gallery-img-grid p-0">
                   <div class="gallery-grids">
-                     <a href="#gal3"><img src="images/g3.jpg" alt="news image" class="img-fluid"></a>
+                     <a href="#gal3"><img src="images/g3b.jpg" alt="news image" class="img-fluid"></a>
                   </div>
                </div>
                <div class="col-lg-3 col-md-3 col-sm-6 gallery-img-grid p-0">
                   <div class="gallery-grids p-0">
-                     <a href="#gal4"><img src="images/g4.jpg" alt="news image" class="img-fluid"></a>
+                     <a href="#gal4"><img src="images/g4b.jpg" alt="news image" class="img-fluid"></a>
                   </div>
                </div>
                <div class="col-lg-6 col-md-6 col-sm-6 gallery-img-grid gallery-mid-two p-0">
@@ -406,22 +423,22 @@
                </div>
                <div class="col-lg-6 col-md-6 col-sm-6 gallery-img-grid gallery-mid-two p-0">
                   <div class="gallery-grids">
-                     <a href="#gal6"><img src="images/g6.jpg" alt="news image" class="img-fluid"></a>
+                     <a href="#gal6"><img src="images/g6b.jpg" alt="news image" class="img-fluid"></a>
                   </div>
                </div>
                <div class="col-lg-4 col-md-4 col-sm-12 gallery-img-three p-0">
                   <div class="gallery-grids">
-                     <a href="#gal7"><img src="images/g7.jpg" alt="news image" class="img-fluid"></a>
+                     <a href="#gal7"><img src="images/g10.jpg" alt="news image" class="img-fluid"></a>
                   </div>
                </div>
                <div class="col-lg-4 col-md-4 col-sm-12 gallery-img-three p-0">
                   <div class="gallery-grids">
-                     <a href="#gal8"><img src="images/g8.jpg" alt="news image" class="img-fluid"></a>
+                     <a href="#gal8"><img src="images/g7b.jpg" alt="news image" class="img-fluid"></a>
                   </div>
                </div>
                <div class="col-lg-4 col-md-4 col-sm-12 gallery-img-three p-0">
                   <div class="gallery-grids">
-                     <a href="#gal9"><img src="images/g9.jpg" alt="news image" class="img-fluid"></a>
+                     <a href="#gal9"><img src="images/g8b.jpg" alt="news image" class="img-fluid"></a>
                   </div>
                </div>
             </div>
@@ -431,7 +448,7 @@
       <!-- popup-->
       <div id="gal1" class="popup-effect">
          <div class="popup">
-            <img src="images/g1.jpg" alt="Popup Image" class="img-fluid" />
+            <img src="images/g1b.jpg" alt="Popup Image" class="img-fluid" />
             <a class="close" href="#gallery">&times;</a>
          </div>
       </div>
@@ -439,7 +456,7 @@
       <!-- popup-->
       <div id="gal2" class="popup-effect">
          <div class="popup">
-            <img src="images/g2.jpg" alt="Popup Image" class="img-fluid" />
+            <img src="images/g2b.jpg" alt="Popup Image" class="img-fluid" />
             <a class="close" href="#gallery">&times;</a>
          </div>
       </div>
@@ -447,7 +464,7 @@
       <!-- popup-->
       <div id="gal3" class="popup-effect">
          <div class="popup">
-            <img src="images/g3.jpg" alt="Popup Image" class="img-fluid" />
+            <img src="images/g3b.jpg" alt="Popup Image" class="img-fluid" />
             <a class="close" href="#gallery">&times;</a>
          </div>
       </div>
@@ -455,7 +472,7 @@
       <!-- popup-->
       <div id="gal4" class="popup-effect">
          <div class="popup">
-            <img src="images/g4.jpg" alt="Popup Image" class="img-fluid" />
+            <img src="images/g4b.jpg" alt="Popup Image" class="img-fluid" />
             <a class="close" href="#gallery">&times;</a>
          </div>
       </div>
@@ -471,7 +488,7 @@
       <!-- popup-->
       <div id="gal6" class="popup-effect">
          <div class="popup">
-            <img src="images/g6.jpg" alt="Popup Image" class="img-fluid" />
+            <img src="images/g6b.jpg" alt="Popup Image" class="img-fluid" />
             <a class="close" href="#gallery">&times;</a>
          </div>
       </div>
@@ -479,7 +496,7 @@
       <!-- popup-->
       <div id="gal7" class="popup-effect">
          <div class="popup">
-            <img src="images/g7.jpg" alt="Popup Image" class="img-fluid" />
+            <img src="images/g10.jpg" alt="Popup Image" class="img-fluid" />
             <a class="close" href="#gallery">&times;</a>
          </div>
       </div>
@@ -487,7 +504,7 @@
       <!-- popup-->
       <div id="gal8" class="popup-effect">
          <div class="popup">
-            <img src="images/g8.jpg" alt="Popup Image" class="img-fluid" />
+            <img src="images/g7b.jpg" alt="Popup Image" class="img-fluid" />
             <a class="close" href="#gallery">&times;</a>
          </div>
       </div>
@@ -495,7 +512,7 @@
       <!-- popup-->
       <div id="gal9" class="popup-effect">
          <div class="popup">
-            <img src="images/g9.jpg" alt="Popup Image" class="img-fluid" />
+            <img src="images/g8b.jpg" alt="Popup Image" class="img-fluid" />
             <a class="close" href="#gallery">&times;</a>
          </div>
       </div>
@@ -507,7 +524,7 @@
          <div class="container-fluid py-lg-5 py-md-4 py-sm-4 py-3">
             <h3 class="title text-center mb-md-4 mb-sm-3 mb-3 mb-2">Derniers Événements</h3>
             <div class="title-wls-text text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">
-               <p>Restez Connectés : Nos Derniers Événements et Actions Communautaires </p>
+               <p>Galas de Récolte de Fonds : Célébrons Ensemble pour Soutenir nos Initiatives</p>
             </div>
             <div class="row">
                <div class="col-lg-3 col-md-6 col-sm-6 busness-tip-one">
@@ -521,8 +538,8 @@
                         </ul>
                       </a>
                   </div>
-                  <h4 class="mb-lg-4 mb-3"><a href="#contact">Better Care and Better World</a></h4>
-                  <p>Lorem Ipsum is simply text the printing and typesetting standard industry.Lorem Ipsum has been the industry's standard
+                  <h4 class="mb-lg-4 mb-3"><a href="#contact">Le Bureau d'ERFI Unis pour un Avenir meilleur</a></h4>
+                  <p>Dans cette image, les membres du bureau d'ERFI se réunissent pour une photo mémorable.
                   </p>
                </div>
                <div class="col-lg-3 col-md-6 col-sm-6 busness-tip-four ">
@@ -536,15 +553,15 @@
                         </ul>
                      </a>
                   </div>
-                  <h4 class="mb-lg-4 mb-3"><a href="#contact">We Need Your Help For Rescue Child</a></h4>
-                  <p>Lorem Ipsum is simply text the printing and typesetting standard industry. Lorem Ipsum has been the industry's standard
+                  <h4 class="mb-lg-4 mb-3"><a href="#contact">Une Soirée de Solidarité et de Célébration</a></h4>
+                  <p>Cette photo saisissante capture l'instant où les invités d'honneur, empreints d'une générosité éclatante, enrichissent de leur présence le dîner de galas d'ERFI.
                   </p>
                </div>
             </div>
             <div class="row">
                <div class="col-lg-3 col-md-6 col-sm-6 mid-text-info">
-                  <h4 class="mb-lg-4 mb-3"><a href="#contact">Better Care and Better World</a></h4>
-                  <p>Lorem Ipsum is simply text the printing and typesetting standard industry. Lorem Ipsum has been the industry's standard
+                  <h4 class="mb-lg-4 mb-3"><a href="#contact">Reconnaître Nos Partenaires et Bénévoles</a></h4>
+                  <p>Nous tenons à exprimer notre profonde gratitude envers nos partenaires, bénévoles et tous ceux qui ont contribué au succès de cet événement. Votre générosité et votre soutien sont les fondements de nos réalisations.
                   </p>
                </div>
                <div class="col-lg-3 col-md-6 col-sm-6 busness-tip-two ">
@@ -558,8 +575,9 @@
                   </div>
                </div>
                <div class="col-lg-3 col-md-6 col-sm-6 mid-text-info">
-                  <h4 class="mb-lg-4 mb-3"><a href="#contact">We Need Your Help For Rescue Child</a></h4>
-                  <p>Lorem Ipsum is simply text the printing and typesetting standard industry. Lorem Ipsum has been the industry's standard
+                  <h4 class="mb-lg-4 mb-3"><a href="#contact">L'Équipe Dirigeante</a></h4>
+                  <p>Les Membres du Bureau Exécutif d'ERFI Réunis.
+                      Cette image incarne l'esprit collaboratif et la force intellectuelle qui propulsent ERFI vers la réalisation de sa mission d'autonomisation des familles rurales.
                   </p>
                </div>
                <div class="col-lg-3 col-md-6 col-sm-6 busness-tip-three pl-sm-0">
@@ -605,23 +623,50 @@
                <p>Besoin d'Informations Supplémentaires ? Contactez-nous !
                </p>
             </div>
+            <div class="message-container text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3" id="messageContainer" >
+                <p></p>
+            </div>
+
             <div class="row">
                <div class="col-lg-6 col-md-6 contact-details">
-                  <form action="#" method="post">
-                     <div class=" form-group contact-forms">
-                        <input type="text" class="form-control" placeholder="Nom" required="">
-                     </div>
-                     <div class="form-group contact-forms">
-                        <input type="email" class="form-control" placeholder="Email" required="">
-                     </div>
-                     <div class="form-group contact-forms">
-                        <input type="text" class="form-control" placeholder="Tél" required="">
-                     </div>
-                     <div class="form-group contact-forms">
-                        <textarea class="form-control" placeholder="Message" rows="3" required=""></textarea>
-                     </div>
-                     <button type="submit" class="btn sent-butnn">Envoyer</button>
-                  </form>
+                   <form action="database/contact.php" method="post" id="contactForm">
+                       <div class="form-group contact-forms">
+                           <select name="objet" class="form-control" required="">
+                               <option value="" disabled selected>Sélectionnez l'objet</option>
+                               <option value="don">Don unique</option>
+                               <option value="donNature">Dons en nature</option>
+                               <option value="benevole">Devenir bénévole</option>
+                               <option value="parrainage">Parrainer un enfant</option>
+                               <option value="info">Demande d'informations</option>
+                               <option value="autres">Autres</option>
+                           </select>
+                       </div>
+                       <div class="form-group contact-forms">
+                           <select name="civilite" class="form-control" required="">
+                               <option value="" disabled selected>Civilité</option>
+                               <option value="monsieur">Monsieur</option>
+                               <option value="madame">Madame</option>
+                           </select>
+                       </div>
+                       <div class="form-group contact-forms">
+                           <input type="text" name="nom" class="form-control" placeholder="Nom" required="">
+                       </div>
+                       <div class="form-group contact-forms">
+                           <input type="email" name="email" class="form-control" placeholder="Email" required="">
+                       </div>
+                       <div class="form-group contact-forms">
+                           <input type="tel" name="tel" class="form-control" placeholder="Tél"  pattern="[0-9]{10}">
+                       </div>
+                       <div class="form-group contact-forms">
+                           <textarea name="message" class="form-control" placeholder="Message" rows="3" required=""></textarea>
+                       </div>
+                       <div class="form-group contact-forms">
+                           <label>
+                               <input type="checkbox" name="newsletter" value="1"> Recevoir notre newsletter
+                           </label>
+                       </div>
+                       <button type="button" class="btn sent-butnn" onclick="submitForm()">Envoyer</button>
+                   </form>
                </div>
                <div class="col-lg-6 col-md-6 address-grid text-center">
                  <!-- <div class="contact-address-info mb-md-4 mb-3">
@@ -647,7 +692,7 @@
       <!--<div class="address_mail_footer_grids">
          <iframe src="https://www.google.com/maps/place/Rte+de+la+Pr%C3%AAle+2B,+1142+Pampigny,+Suisse/@46.5822671,6.4194136,17z/data=!3m1!4b1!4m10!1m2!2m1!1s2b+route+de+la+prele+pampigny+iframe!3m6!1s0x478c4a3e826c74eb:0x2dfe3ca20b5fcae7!8m2!3d46.5822635!4d6.4242845!15sCiQyYiByb3V0ZSBkZSBsYSBwcmVsZSBwYW1waWdueSBpZnJhbWWSARBnZW9jb2RlZF9hZGRyZXNz4AEA!16s%2Fg%2F11c267r7bs?entry=ttu"></iframe>
       </div>
-      <!-- footer -->
+       footer -->
       <footer class=" py-3">
         <!-- <div class="container">
             <div class="icons mt-3 text-center">
@@ -683,5 +728,39 @@
          <!--//move icon -->
       </footer>
       <!--//footer -->
+      <script>
+          function submitForm() {
+              const form = document.getElementById('contactForm');
+
+              // Utiliser reportValidity pour afficher les messages d'erreur et mettre en surbrillance les champs invalides
+              if (!form.reportValidity()) {
+                  // Le formulaire n'est pas valide, vous pouvez ajouter des actions ici si nécessaire
+                  return;
+              }
+
+              const formData = new FormData(form);
+
+              $.ajax({
+                  type: 'POST',
+                  url: 'database/contact.php',
+                  data: formData,
+                  contentType: false,
+                  processData: false,
+                  cache: false,
+                  success: function(response) {
+                      console.log('Réponse du serveur :', response);
+                      // Mettre à jour la section de message avec la réponse du serveur
+                      $('#messageContainer').html('<p>' + response + '</p>');
+
+                      // Afficher ou masquer la section en fonction de la présence de message
+                      if (response.trim() !== '') {
+                          $('#messageContainer').show(); // Afficher la section
+                      } else {
+                          $('#messageContainer').hide(); // Masquer la section
+                      }
+                  }
+              });
+          }
+      </script>
    </body>
 </html>
