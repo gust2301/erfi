@@ -1,21 +1,4 @@
 
-<?php
-session_start();
-// ... Votre code existant ...
-
-// Vérifier le paramètre de succès
-//$success = isset($_GET['success']) ? $_GET['success'] : null;
-
-// Afficher un message en fonction du paramètre de succès
-/*if ($success === '1') {
-    $message = "Votre message a été envoyé avec succès !";
-} elseif ($success === '0') {
-    $message = "Une erreur s'est produite lors de l'envoi du message.";
-} else {
-    $message = null;
-}*/
-
-?>
 <!DOCTYPE html>
 <html lang="fr">
    <head>
@@ -26,6 +9,7 @@ session_start();
       <meta name="keywords" content="Ong ERFI, Charity Fund, aid for disadvantaged children in Senegal,
          Children's education and social assistances" />
       <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+       <script src="js/ajaxTreatment-min.js"></script>
       <script>
          addEventListener("load", function () {
          	setTimeout(hideURLbar, 0);
@@ -57,11 +41,6 @@ session_start();
                <!-- nav -->
                <nav >
                  <a class="" href="#home"><img src="images/logo.png" alt="" class="img-logo" width="15%" height="15%"></a>
-                 <!--
-                  <div id="logo">
-                    <h1><a class="" href="index.html">ERFI<span>Charity Fund </span></a>
-                  </div>
-                  -->
                   <label for="drop" class="toggle">Menu</label>
                   <input type="checkbox" id="drop">
                   <ul class="menu mt-2">
@@ -95,11 +74,6 @@ session_start();
                   <h5>Notre Mission : Éduquer. Soigner. Transformer.
                   </h5>
                </div>
-                <!--
-               <div class="two-demo-button mt-lg-4 mt-3">
-                  <p> Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum </p>
-               </div>
-               -->
                <div class="view-buttn mt-md-4 mt-sm-4 mt-3">
                   <a href="#about" class="btn scroll">À propos</a>
                </div>
@@ -152,18 +126,13 @@ session_start();
                      <h5>Notre Mission</h5>
                   </div>
                   <div class="about-para-txt">
-                     <p>Chez ERFI « Empowered Rural Families International», nous croyons en un avenir où chaque enfant a accès à une éducation de qualité et où chaque mère peut accueillir son bébé dans des conditions optimales. En tant qu'association à but non lucratif régie par les articles 60 et suivants du Code Civil Suisse, nous sommes déterminés à faire une différence concrète dans la vie des communautés rurales.
+                     <p>Chez ERFI « Empowered Rural Families International », nous croyons en un avenir où chaque enfant a accès à une éducation de qualité et où chaque mère peut accueillir son bébé dans des conditions optimales. En tant qu'association à but non lucratif régie par les articles 60 et suivants du Code Civil Suisse, nous sommes déterminés à faire une différence concrète dans la vie des communautés rurales.
                      </p>
                      <p class="mt-2">Nous luttons contre la déperdition scolaire en favorisant l'accès aux études secondaires pour les enfants des villages.
                          De plus, nous nous engageons à offrir des soins de santé de qualité, en mettant particulièrement l'accent sur le bien-être des futures mamans vivant dans ces milieux.</p>
                       <p class="mt-2"> Rejoignez-nous dans notre mission d'autonomisation des familles rurales à travers l'éducation et les soins de santé.</p>
 
                   </div>
-                   <!--
-                  <div class="view-price mt-lg-5 mt-md-4 mt-3">
-                     <a href="#contact" class=" scroll">Lire la suite</a>
-                  </div>
-                  -->
                </div>
                <div class="col-lg-5 col-md-6 about-imgs-txt">
                </div>
@@ -398,7 +367,7 @@ session_start();
             <div class="row gallery-info">
                <div class="col-lg-3 col-md-3 col-sm-6 gallery-img-grid p-0">
                   <div class="gallery-grids">
-                     <a href="#gal1"><img src="images/g1b.jpg" alt="news image" class="img-fluid"></a>
+                     <a href="#gal1"><img src="images/g1b.JPG" alt="news image" class="img-fluid"></a>
                   </div>
                </div>
                <div class="col-lg-3 col-md-3 col-sm-6 gallery-img-grid p-0">
@@ -423,12 +392,12 @@ session_start();
                </div>
                <div class="col-lg-6 col-md-6 col-sm-6 gallery-img-grid gallery-mid-two p-0">
                   <div class="gallery-grids">
-                     <a href="#gal6"><img src="images/g6b.jpg" alt="news image" class="img-fluid"></a>
+                     <a href="#gal6"><img src="images/g6b.JPG" alt="news image" class="img-fluid"></a>
                   </div>
                </div>
                <div class="col-lg-4 col-md-4 col-sm-12 gallery-img-three p-0">
                   <div class="gallery-grids">
-                     <a href="#gal7"><img src="images/g10.jpg" alt="news image" class="img-fluid"></a>
+                     <a href="#gal7"><img src="images/g10.JPG" alt="news image" class="img-fluid"></a>
                   </div>
                </div>
                <div class="col-lg-4 col-md-4 col-sm-12 gallery-img-three p-0">
@@ -448,7 +417,7 @@ session_start();
       <!-- popup-->
       <div id="gal1" class="popup-effect">
          <div class="popup">
-            <img src="images/g1b.jpg" alt="Popup Image" class="img-fluid" />
+            <img src="images/g1b.JPG" alt="Popup Image" class="img-fluid" />
             <a class="close" href="#gallery">&times;</a>
          </div>
       </div>
@@ -488,7 +457,7 @@ session_start();
       <!-- popup-->
       <div id="gal6" class="popup-effect">
          <div class="popup">
-            <img src="images/g6b.jpg" alt="Popup Image" class="img-fluid" />
+            <img src="images/g6b.JPG" alt="Popup Image" class="img-fluid" />
             <a class="close" href="#gallery">&times;</a>
          </div>
       </div>
@@ -496,7 +465,7 @@ session_start();
       <!-- popup-->
       <div id="gal7" class="popup-effect">
          <div class="popup">
-            <img src="images/g10.jpg" alt="Popup Image" class="img-fluid" />
+            <img src="images/g10.JPG" alt="Popup Image" class="img-fluid" />
             <a class="close" href="#gallery">&times;</a>
          </div>
       </div>
@@ -688,34 +657,10 @@ session_start();
             </div>
          </div>
       </section>
-      <!--//contact -->
-      <!--<div class="address_mail_footer_grids">
-         <iframe src="https://www.google.com/maps/place/Rte+de+la+Pr%C3%AAle+2B,+1142+Pampigny,+Suisse/@46.5822671,6.4194136,17z/data=!3m1!4b1!4m10!1m2!2m1!1s2b+route+de+la+prele+pampigny+iframe!3m6!1s0x478c4a3e826c74eb:0x2dfe3ca20b5fcae7!8m2!3d46.5822635!4d6.4242845!15sCiQyYiByb3V0ZSBkZSBsYSBwcmVsZSBwYW1waWdueSBpZnJhbWWSARBnZW9jb2RlZF9hZGRyZXNz4AEA!16s%2Fg%2F11c267r7bs?entry=ttu"></iframe>
-      </div>
-       footer -->
+
+       <!-- footer -->
       <footer class=" py-3">
-        <!-- <div class="container">
-            <div class="icons mt-3 text-center">
-               <ul class="d-flex justify-content-center pb-3 social-icons">
-                  <li>
-                     <a href="#">
-                     <span class="fa fa-facebook-f"></span>
-                     </a>
-                  </li>
-                  <li class="mx-3">
-                     <a href="#">
-                     <span class="fa fa-twitter"></span>
-                     </a>
-                  </li>
-                  <li class="mr-3">
-                     <a href="#">
-                     <span class="fa fa-google-plus"></span>
-                     </a>
-                  </li>
-                  <li><a href="#"><span class="fa fa-vk"></span></a></li>
-               </ul>
-            </div>
-         </div>-->
+
          <div class="footer-main txt-center">
             <p>
                © 2023 Developed by <a href="https://www.linkedin.com/in/augustin-varore-05969714b" target="_blank">Augustin VARORE</a>
@@ -728,39 +673,5 @@ session_start();
          <!--//move icon -->
       </footer>
       <!--//footer -->
-      <script>
-          function submitForm() {
-              const form = document.getElementById('contactForm');
-
-              // Utiliser reportValidity pour afficher les messages d'erreur et mettre en surbrillance les champs invalides
-              if (!form.reportValidity()) {
-                  // Le formulaire n'est pas valide, vous pouvez ajouter des actions ici si nécessaire
-                  return;
-              }
-
-              const formData = new FormData(form);
-
-              $.ajax({
-                  type: 'POST',
-                  url: 'database/contact.php',
-                  data: formData,
-                  contentType: false,
-                  processData: false,
-                  cache: false,
-                  success: function(response) {
-                      console.log('Réponse du serveur :', response);
-                      // Mettre à jour la section de message avec la réponse du serveur
-                      $('#messageContainer').html('<p>' + response + '</p>');
-
-                      // Afficher ou masquer la section en fonction de la présence de message
-                      if (response.trim() !== '') {
-                          $('#messageContainer').show(); // Afficher la section
-                      } else {
-                          $('#messageContainer').hide(); // Masquer la section
-                      }
-                  }
-              });
-          }
-      </script>
    </body>
 </html>
