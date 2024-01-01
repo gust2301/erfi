@@ -412,6 +412,7 @@ a.reqe-button {
         padding: 15px 0;
         text-align: center;
         width: 100%;
+        z-index: 1;
     }
     /* Change menu item's width to 100% */
     nav ul li {
@@ -1332,6 +1333,7 @@ a.move-top {
     .view-buttn a {
         padding: 7px 23px;
     }
+
     #logo a {
         font-size: 29px;
     }

@@ -45,7 +45,7 @@
                   <input type="checkbox" id="drop">
                   <ul class="menu mt-2">
                      <li class="active"><a href="index.php">Accueil</a></li>
-                     <li class="mx-lg-3 mx-md-2 my-md-0 my-1"><a href="#about">À propos</a></li>
+                     <li><a href="#about">À propos</a></li>
                      <li><a href="#service">Engagez-vous</a></li>
                      <li class="mx-lg-3 mx-md-2 my-md-0 my-1">
                         <!-- First Tier Drop Down -->
