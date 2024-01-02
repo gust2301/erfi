@@ -202,14 +202,14 @@
             <div class="row">
                <div class="col-lg-5 service-two-grids">
                   <div class="color-img-five">
-                     <div class="ser-sevice-grid text-center">
+                     <div class="ser-sevice-grid text-center" style="max-height: 300px; overflow-y: auto;>
                         <h4 class="pb-3">Votre Don Change des Vies</h4>
                         <p>Chaque don que vous faites contribue directement à la réalisation de notre mission. Qu'il s'agisse de fournir des fournitures scolaires aux enfants, d'assurer un suivi médical pré et postnatal aux futures mamans, ou de mettre en place des programmes éducatifs innovants, votre soutien a un impact concret.</p>
                         <p>Chaque geste compte. Merci de votre engagement envers notre cause.</p>
-                         <div class="view-price mt-3">
-                             <a href="#contact" class=" scroll">Soutenir Maintenant</a>
-                         </div>
                      </div>
+                   <div class="view-price mt-3 text-center" >
+                       <a href="#contact" class=" scroll">Soutenir Maintenant</a>
+                   </div>
                   </div>
                </div>
                <div class="col-lg-7 service-two-grids">
@@ -226,7 +226,7 @@
                         <div class=" color-img-two">
                             <div class="ser-sevice-grid text-center">
                                 <h4 class="pb-3">Devenir Bénévole</h4>
-                                <p>Rejoignez notre équipe de bénévoles dévoués. Votre temps, vos compétences et votre énergie peuvent avoir un impact positif.</p>
+                                <p>Rejoignez notre équipe de bénévoles. Vscros compétences et votre énergie peuvent avoir un impact positif.</p>
                             </div>
                         </div>
                      </div>
