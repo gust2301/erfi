@@ -7,8 +7,11 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="keywords" content="Ong ERFI, Charity Fund, aid for disadvantaged children in Senegal,
-         Children's education and social assistances" />
+         Children's education and social assistances, aide enfants Sénégal, Mbodiène, parrainer un enfant, éducation, bénévolat
+        " />
       <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
        <script src="js/ajaxTreatment-min.js"></script>
       <script>
          addEventListener("load", function () {
@@ -55,16 +58,20 @@
                         <input type="checkbox" id="drop-2">
                         <ul>
                             <li><a href="#gallery" class="drop-text">Galerie</a></li>
-                            <li><a href="#team" class="drop-text">Bénévoles</a></li>
-                            <li><a href="#blog" class="drop-text">Évènements</a></li>
+                            <li class="d-none d-md-block"><a href="#team" class="drop-text">Bénévoles</a></li>
+                            <li class="d-md-none"><a href="#teamBenevole" class="drop-text">Bénévoles</a></li>
+                            <li class="d-none d-md-block"><a href="#blog" class="drop-text">Évènements</a></li>
+                            <li class="d-md-none"><a href="#blogMobile" class="drop-text">Évènements</a></li>
                         </ul>
                      </li>
                      <li><a href="#contact">Contactez-nous</a></li>
                   </ul>
                </nav>
+
                <!-- //nav -->
             </div>
          </div>
+
          <!-- //header -->
          <!-- banner -->
          <div class="main-banner">
@@ -84,7 +91,8 @@
       <section class="three-grids">
          <div class="container-fluid">
             <div class="row">
-               <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+                <!--masquer photo pour mobile-->
+               <div class="col-lg-3 col-md-6 col-sm-6 p-0 d-none d-md-block">
                   <div class="img-abt-info1">
                   </div>
                </div>
@@ -99,11 +107,12 @@
                      </div>
                   </div>
                </div>
-               <div class="col-lg-3 col-md-6 col-sm-6 p-0">
+                <!--masquer photo pour mobile-->
+               <div class="col-lg-3 col-md-6 col-sm-6 p-0 d-none d-md-block">
                   <div class="img-abt-info2">
                   </div>
                </div>
-               <div class="col-lg-3 col-md-6 col-sm-6 banner-bottom-grid p-0">
+               <div class="col-lg-3 col-md-6 col-sm-6 banner-bottom-grid p-0 ">
                   <div class="w3layouts-abt-info">
                      <div class="mb-lg-3 mb-md-3 mb-2 abut-headder">
                         <h4>Devenir Bénévole</h4>
@@ -131,7 +140,7 @@
                      <p class="mt-2">Nous luttons contre la déperdition scolaire en favorisant l'accès aux études secondaires pour les enfants des villages.
                          De plus, nous nous engageons à offrir des soins de santé de qualité, en mettant particulièrement l'accent sur le bien-être des futures mamans vivant dans ces milieux.</p>
                       <p class="mt-2"> Rejoignez-nous dans notre mission d'autonomisation des familles rurales à travers l'éducation et les soins de santé.</p>
-
+                      <a href="documents/StatutsErfi.pdf" target="_blank" rel="noopener noreferrer">Voir les status de l'ONG</a>
                   </div>
                </div>
                <div class="col-lg-5 col-md-6 about-imgs-txt">
@@ -253,7 +262,7 @@
       </section>
       <!--//service -->
       <!--team -->
-      <section class="team py-lg-4 py-md-3 py-sm-3 py-3" id="team">
+      <section class="team py-lg-4 py-md-3 py-sm-3 py-3 d-none d-md-block" id="team">
          <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
             <h3 class="title text-center mb-md-4 mb-sm-3 mb-3 mb-2 clr">Nos Bénévoles</h3>
             <div class="title-wls-text text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3 sub-colors">
@@ -268,11 +277,6 @@
                         <li>
                            <a href="#">
                            <span class="fa fa-facebook-f"></span>
-                           </a>
-                        </li>
-                        <li class="mx-3">
-                           <a href="#">
-                           <span class="fa fa-twitter"></span>
                            </a>
                         </li>
                         <li>
@@ -293,11 +297,6 @@
                            <span class="fa fa-facebook-f"></span>
                            </a>
                         </li>
-                        <li class="mx-3">
-                           <a href="#">
-                           <span class="fa fa-twitter"></span>
-                           </a>
-                        </li>
                         <li>
                            <a href="#">
                            <span class="fa fa-google-plus"></span>
@@ -314,11 +313,6 @@
                         <li>
                            <a href="#">
                            <span class="fa fa-facebook-f"></span>
-                           </a>
-                        </li>
-                        <li class="mx-3">
-                           <a href="#">
-                           <span class="fa fa-twitter"></span>
                            </a>
                         </li>
                         <li>
@@ -339,11 +333,6 @@
                            <span class="fa fa-facebook-f"></span>
                            </a>
                         </li>
-                        <li class="mx-3">
-                           <a href="#">
-                           <span class="fa fa-twitter"></span>
-                           </a>
-                        </li>
                         <li>
                            <a href="#">
                            <span class="fa fa-google-plus"></span>
@@ -355,64 +344,184 @@
             </div>
          </div>
       </section>
+
+      <!-- Carrousel pour les petits écrans -->
+      <section class="team py-lg-4 py-md-3 py-sm-3 py-3 d-md-none" id="teamBenevole">
+          <div id="carouselTeam" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <img src="images/t6.jpg" alt="Bénévole 1" class="d-block w-100">
+                      <div class="carousel-caption">
+                          <h4>A.SARR</h4>
+                          <p>Présidente</p>
+                          <ul class="d-flex justify-content-center pt-3 social-icons">
+                              <li>
+                                  <a href="#">
+                                      <span class="fa fa-facebook-f"></span>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <span class="fa fa-google-plus"></span>
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <img src="images/t5.jpg" alt="Bénévole 2" class="d-block w-100">
+                      <div class="carousel-caption">
+                          <h4>A.NDOUR</h4>
+                          <p>Commissaire aux comptes</p>
+                          <ul class="d-flex justify-content-center pt-3 social-icons">
+                              <li>
+                                  <a href="#">
+                                      <span class="fa fa-facebook-f"></span>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <span class="fa fa-google-plus"></span>
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <img src="images/t7.jpg" alt="Bénévole 2" class="d-block w-100">
+                      <div class="carousel-caption">
+                          <h4>A.GARCIA</h4>
+                          <p>Secrétaire générale</p>
+                          <ul class="d-flex justify-content-center pt-3 social-icons">
+                              <li>
+                                  <a href="#">
+                                      <span class="fa fa-facebook-f"></span>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <span class="fa fa-google-plus"></span>
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <img src="images/t7.jpg" alt="Bénévole 2" class="d-block w-100">
+                      <div class="carousel-caption">
+                          <h4>J.DACOUGNA</h4>
+                          <p>Trésorière</p>
+                          <ul class="d-flex justify-content-center pt-3 social-icons">
+                              <li>
+                                  <a href="#">
+                                      <span class="fa fa-facebook-f"></span>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <span class="fa fa-google-plus"></span>
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <img src="images/t5.jpg" alt="Bénévole 2" class="d-block w-100">
+                      <div class="carousel-caption">
+                          <h4>D.NDOUR</h4>
+                          <p>Vice Présidente ERFI</p>
+                          <ul class="d-flex justify-content-center pt-3 social-icons">
+                              <li>
+                                  <a href="#">
+                                      <span class="fa fa-facebook-f"></span>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <span class="fa fa-google-plus"></span>
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <img src="images/t5.jpg" alt="Bénévole 2" class="d-block w-100">
+                      <div class="carousel-caption">
+                          <h4>A.VARORE</h4>
+                          <p>Webmaster</p>
+                          <ul class="d-flex justify-content-center pt-3 social-icons">
+                              <li>
+                                  <a href="#">
+                                      <span class="fa fa-facebook-f"></span>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">
+                                      <span class="fa fa-google-plus"></span>
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+                  <!-- Ajoutez d'autres éléments de carrousel ici ... -->
+              </div>
+              <a class="carousel-control-prev" href="#carouselTeam" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselTeam" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
+      </section>
       <!--//team -->
       <!-- gallery-main -->
       <section class="gallery py-lg-4 py-md-3 py-sm-3 py-3" id="gallery">
-         <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
-            <h3 class="title text-center mb-md-4 mb-sm-3 mb-3 mb-2">Notre Galerie</h3>
-            <div class="title-wls-text text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">
-               <p >Découvrez notre Monde en Images : La Galerie d'ERFI
-               </p>
-            </div>
-            <div class="row gallery-info">
-               <div class="col-lg-3 col-md-3 col-sm-6 gallery-img-grid p-0">
-                  <div class="gallery-grids">
-                     <a href="#gal1"><img src="images/g1b.JPG" alt="news image" class="img-fluid"></a>
+          <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
+              <h3 class="title text-center mb-md-4 mb-sm-3 mb-3 mb-2">Notre Galerie</h3>
+              <div class="title-wls-text text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">
+                  <p>Découvrez notre Monde en Images : La Galerie d'ERFI</p>
+              </div>
+
+              <div id="imageCarousel" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                      <!-- Première image -->
+                      <div class="carousel-item">
+                          <img src="images/g6b.JPG" alt="ONG Erfi Sénégal image enfants Mbodiène" class="img-fluid">
+                      </div>
+                      <div class="carousel-item active">
+                          <img src="images/g1b.JPG" alt="ONG Erfi Sénégal image 2 galerie" class="img-fluid">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="images/g2b.jpg" alt="ONG Erfi Sénégal image 3 galerie" class="img-fluid">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="images/g10.JPG" alt="ONG Erfi Sénégal image 4 galerie" class="img-fluid">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="images/g4b.jpg" alt="ONG Erfi Sénégal image 5 galerie" class="img-fluid">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="images/g6.jpg" alt="ONG Erfi Sénégal image 6 galerie" class="img-fluid">
+                      </div>
+                      <div class="carousel-item">
+                          <img src="images/g7b.jpg" alt="ONG Erfi Sénégal image 7 galerie" class="img-fluid">
+                      </div>
+
                   </div>
-               </div>
-               <div class="col-lg-3 col-md-3 col-sm-6 gallery-img-grid p-0">
-                  <div class="gallery-grids">
-                     <a href="#gal2"><img src="images/g2b.jpg" alt="news image" class="img-fluid"></a>
-                  </div>
-               </div>
-               <div class="col-lg-3 col-md-3 col-sm-6 gallery-img-grid p-0">
-                  <div class="gallery-grids">
-                     <a href="#gal3"><img src="images/g3b.jpg" alt="news image" class="img-fluid"></a>
-                  </div>
-               </div>
-               <div class="col-lg-3 col-md-3 col-sm-6 gallery-img-grid p-0">
-                  <div class="gallery-grids p-0">
-                     <a href="#gal4"><img src="images/g4b.jpg" alt="news image" class="img-fluid"></a>
-                  </div>
-               </div>
-               <div class="col-lg-6 col-md-6 col-sm-6 gallery-img-grid gallery-mid-two p-0">
-                  <div class="gallery-grids">
-                     <a href="#gal5"><img src="images/g5b.JPG" alt="news image" class="img-fluid"></a>
-                  </div>
-               </div>
-               <div class="col-lg-6 col-md-6 col-sm-6 gallery-img-grid gallery-mid-two p-0">
-                  <div class="gallery-grids">
-                     <a href="#gal6"><img src="images/g6b.JPG" alt="news image" class="img-fluid"></a>
-                  </div>
-               </div>
-               <div class="col-lg-4 col-md-4 col-sm-12 gallery-img-three p-0">
-                  <div class="gallery-grids">
-                     <a href="#gal7"><img src="images/g10.JPG" alt="news image" class="img-fluid"></a>
-                  </div>
-               </div>
-               <div class="col-lg-4 col-md-4 col-sm-12 gallery-img-three p-0">
-                  <div class="gallery-grids">
-                     <a href="#gal8"><img src="images/g7b.jpg" alt="news image" class="img-fluid"></a>
-                  </div>
-               </div>
-               <div class="col-lg-4 col-md-4 col-sm-12 gallery-img-three p-0">
-                  <div class="gallery-grids">
-                     <a href="#gal9"><img src="images/g8b.jpg" alt="news image" class="img-fluid"></a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
+                  <!-- Contrôles de navigation -->
+                  <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Précédent</span>
+                  </a>
+                  <a class="carousel-control-next" href="#imageCarousel" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Suivant</span>
+                  </a>
+              </div>
+          </div>
+      </section
       <!--// gallery-main -->
       <!-- popup-->
       <div id="gal1" class="popup-effect">
@@ -489,7 +598,7 @@
       <!-- //gallery popups -->
       <!-- //gallery -->
       <!-- blog -->
-      <section class="blog py-lg-4 py-md-3 py-sm-3 py-3" id="blog">
+      <section class="blog py-lg-4 py-md-3 py-sm-3 py-3 d-none d-md-block" id="blog">
          <div class="container-fluid py-lg-5 py-md-4 py-sm-4 py-3">
             <h3 class="title text-center mb-md-4 mb-sm-3 mb-3 mb-2">Derniers Événements</h3>
             <div class="title-wls-text text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">
@@ -562,6 +671,78 @@
             </div>
          </div>
       </section>
+
+      <!--Mobile-->
+      <section class="blog py-lg-4 py-md-3 py-sm-3 py-3 d-md-none" id="blogMobile">
+          <div class="container-fluid py-lg-5 py-md-4 py-sm-4 py-3">
+              <h3 class="title text-center mb-md-4 mb-sm-3 mb-3 mb-2">Derniers Événements</h3>
+              <div class="title-wls-text text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">
+                  <p>Galas de Récolte de Fonds : Célébrons Ensemble pour Soutenir nos Initiatives</p>
+              </div>
+              <div id="eventCarousel" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                      <div class="carousel-item active">
+                          <div class="col-lg-3 col-md-6 col-sm-6 busness-tip-one">
+                              <!-- Votre contenu pour le premier événement ici -->
+                              <div class="blog-info">
+                                  <a href="#" class="scroll">
+                                      <ul>
+                                          <li>DEC</li>
+                                          <li>17</li>
+                                      </ul>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="col-lg-3 col-md-6 col-sm-6 busness-tip-four">
+                            <div class="blog-info">
+                                <a href="#" class="scroll">
+                                    <ul>
+                                        <li>DEC</li>
+                                        <li>17</li>
+                                    </ul>
+                                </a>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                          <div class="col-lg-3 col-md-6 col-sm-6 busness-tip-two">
+                              <div class="blog-info">
+                                  <a href="#" class="scroll">
+                                      <ul>
+                                          <li>DEC</li>
+                                          <li>17</li>
+                                      </ul>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                          <div class="col-lg-3 col-md-6 col-sm-6 busness-tip-three">
+                              <div class="blog-info">
+                                  <a href="#" class="scroll">
+                                      <ul>
+                                          <li>DEC</li>
+                                          <li>17</li>
+                                      </ul>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#eventCarousel" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#eventCarousel" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                  </a>
+              </div>
+          </div>
+      </section>
+
       <!-- //blog -->
       <!-- Info-matter -->
       <section class="info-matter py-lg-4 py-md-3 py-sm-3 py-3" id="info-matter">
